@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart School Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">EduTrack</div>
+        <ul class="nav-links">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#teachers">Teachers</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#notices">Notices</a></li>
+        </ul>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+    <header class="hero">
+        <h1>Smart School Management System</h1>
+        <p>Modern platform for efficient management of students, teachers, events, and school administration.</p>
+    </header>
+    <main>
+        <!-- DASHBOARD SECTION -->
+        <section id="dashboard" class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="dashboard-widgets">
+                <div class="widget">
+                    <h3>Total Students</h3>
+                    <p id="studentCount">312</p>
+                </div>
+                <div class="widget">
+                    <h3>Total Teachers</h3>
+                    <p id="teacherCount">22</p>
+                </div>
+                <div class="widget">
+                    <h3>Avg Attendance</h3>
+                    <p>96%</p>
+                </div>
+                <div class="widget">
+                    <h3>Events This Month</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STUDENTS TABLE -->
+        <section id="students">
+            <h2>Student Directory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Roll No</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Raam</td>
+                        <td>10-A</td>
+                        <td>12</td>
+                        <td><span class="status present">Present</span></td>
+                    </tr>
+                    <tr>
+                        <td>Rohit Sharma</td>
+                        <td>9-B</td>
+                        <td>07</td>
+                        <td><span class="status absent">Absent</span></td>
+                    </tr>
+                    <tr>
+                        <td>Aditya Varma</td>
+                        <td>12-C</td>
+                        <td>02</td>
+                        <td><span class="status present">Present</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tilak Varma</td>
+                        <td>8-A</td>
+                        <td>19</td>
+                        <td><span class="status present">Present</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- TEACHERS TABLE -->
+        <section id="teachers">
+            <h2>Faculty Directory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mr. Sandeep Reddy</td>
+                        <td>Mathematics</td>
+                        <td>sandeep.vanga@edutrack.edu</td>
+                        <td>9876543210</td>
+                    </tr>
+                    <tr>
+                        <td>Mr. Mahesh Babu</td>
+                        <td>Physics</td>
+                        <td>mahesh.babu@edutrack.edu</td>
+                        <td>9876598765</td>
+                    </tr>
+                    <tr>
+                        <td>Mr. Arjun Sarkaar</td>
+                        <td>English</td>
+                        <td>arjun.sarkaar@edutrack.edu</td>
+                        <td>9876587654</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- UPCOMING EVENTS -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <ul class="events-list">
+                <li>
+                    <span class="event-title">Science Fair</span>
+                    <span class="event-date">August 20, 2025</span>
+                </li>
+                <li>
+                    <span class="event-title">Annual Sports Meet</span>
+                    <span class="event-date">September 2, 2025</span>
+                </li>
+                <li>
+                    <span class="event-title">Parent-Teacher Meeting</span>
+                    <span class="event-date">September 18, 2025</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- NOTICES -->
+        <section id="notices">
+            <h2>Latest Notices</h2>
+            <div class="notices">
+                <div class="notice">
+                    <h4>Mid-term Examinations</h4>
+                    <p>Exams commence from August 28. Timetable has been shared via email.</p>
+                </div>
+                <div class="notice">
+                    <h4>Library Hours Extended</h4>
+                    <p>School library will remain open till 6:30PM from this week to support exam preparation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>© 2025 EduTrack. Designed & developed for education management excellence.</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
